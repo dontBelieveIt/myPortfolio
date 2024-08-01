@@ -1,0 +1,19 @@
+import "./Timeline.scss"
+
+export function Timeline() {
+    return(
+        <>
+            <div className="container">
+                <h4>Top of the page</h4>
+                <div className="separator"></div>
+                <h4>About me</h4>
+                <div className="separator"></div>
+                <h4>Competence</h4>
+                <div className="separator"></div>
+                <h4>Projets</h4>
+                <div className="separator"></div>
+                <h4>Contact me</h4>
+            </div>
+        </>
+    )
+}

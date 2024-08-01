@@ -1,0 +1,14 @@
+.container {
+    border: 1px dotted #333; 
+    width: 10%; 
+    height: 96vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.separator { 
+    width: 2px; 
+    border-left: 1px solid whitesmoke; 
+    height: 20%;
+}
