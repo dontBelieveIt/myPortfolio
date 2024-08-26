@@ -1,7 +1,7 @@
 import './App.scss';
 
 import { Timeline } from './components/Timeline/Timeline';
-import { Page } from './components/Page/Page';
+import { Page } from './Page/Page';
 
 function App() {
   return (

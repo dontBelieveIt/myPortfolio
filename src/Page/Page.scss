@@ -1,0 +1,14 @@
+@import "../index.scss";
+
+.page {
+    display: flex; 
+    flex-direction: column;
+    margin: 2rem;
+    width: 90%;
+}
+
+.section {
+    border: 1px dotted $copper; 
+    padding: 2rem; 
+    margin-bottom: 2rem;
+}
