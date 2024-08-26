@@ -1,1 +1,20 @@
 @import "../../Page/Page.scss";
+
+.formation {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem ;
+    margin-top: .8rem;
+
+    & img {
+        width: 10%; 
+        object-fit: cover;
+    }
+
+    & block-text {
+        flex-direction: column;
+        justify-content: left;
+        text-align: left;
+        align-items: baseline  ;
+    }
+}

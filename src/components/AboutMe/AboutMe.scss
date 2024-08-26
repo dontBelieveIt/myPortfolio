@@ -1,1 +1,13 @@
 @import "../../Page/Page.scss";
+
+.about-me { 
+    display: flex; 
+    flex-direction: row;
+    gap: 2rem;
+
+    & img {
+        width: 20%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+}
