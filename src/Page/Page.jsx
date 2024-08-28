@@ -18,7 +18,6 @@ export function Page() {
     return(
     <>
     <div className="page">
-        <h1>This is my Portfolio</h1>
         <AboutMe />
         <Passions />
         <Competence />
@@ -28,6 +27,7 @@ export function Page() {
         <Projets />
         <SocialLink />
         <ContactMe />
+        
         <Footer />
     </div>
     </>

@@ -4,7 +4,7 @@ import { Cards } from "../Cards/Cards";
 
 export function Langages(params) {
     return(
-        <div className="section">
+        <div className="section" id="languages">
             <h3>Mettre ici les <u>cards</u> des langages informatiques que je connais. </h3>
         <div className="cards-container">
             <Cards />

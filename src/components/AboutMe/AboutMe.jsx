@@ -5,7 +5,7 @@ import photo from "../../assets/astronaut-4106766_1280.jpg";
 export function AboutMe() {
     return (
         <div className="section">
-            <div className="about-me">
+            <div className="about-me" id="about-me">
                 <img src={photo} />
                 <div className="text-field">
                     <h1>Hello World!</h1>
