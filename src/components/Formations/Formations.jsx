@@ -8,7 +8,7 @@ export function Formations() {
             <h2>mes formations</h2>
            <div className="formation">
                 <img src={OpenClassrooms} />
-                <div className="block-text">
+                <div className="text-field">
                     <h3>Openclassrooms</h3>
                     <h6>Février 2024 - Octobre 2024</h6>
                     <h4>Formation Développeur Web</h4>

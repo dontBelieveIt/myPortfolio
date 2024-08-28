@@ -1,0 +1,13 @@
+@import "../../Page/Page.scss";
+
+.social-link {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom : 2rem;
+
+    & img {
+        height: 4rem; 
+        object-fit: cover;
+    }
+}

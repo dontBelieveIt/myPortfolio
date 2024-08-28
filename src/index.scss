@@ -9,6 +9,8 @@
 
 $copper : #B87333;
 $verdigris : #40B5AD; 
+$white : #faf2eb;
+$dark : #150c05;
 
 body {
   margin: 0;
@@ -16,15 +18,32 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  background-color:#111;
-  color: #f2f2f2;
+  background-color:#000;
+  color:  $white;
+}
+
+a {
+  color: $copper; 
+
+  &:hover {
+    color: $verdigris;
+  }
+}
+
+p {
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family:'Rajdhani', sans-serif;
   font-weight: 400 ;
   letter-spacing: 1.5px;
+  line-height: 2;
   color: $copper;
+}
+
+h1, h2 {
+  text-transform: uppercase;
 }
 
 // code {

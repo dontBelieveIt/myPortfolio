@@ -1,3 +1,5 @@
+@import "../../index.scss";
+
 .container {
     border: 1px dotted #333; 
     width: 10%; 
@@ -11,6 +13,7 @@
 }
 .separator { 
     width: 2px; 
-    border-left: 1px solid whitesmoke; 
+    border-left: 1px solid $white; 
     height: 20%;
+    opacity: 0.5;
 }

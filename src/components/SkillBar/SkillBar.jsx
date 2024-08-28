@@ -12,7 +12,7 @@ export function SkillBar({percentage, progress, category}) {
             count++;
             progress.forEach(element => {
                 if (count <= element.dataset.progress) {
-                    element.parentElement.style.background = `conic-gradient(#f9004d ${count}%, #212428 0)`;
+                    element.parentElement.style.background = `conic-gradient(#40B5AD ${count}%, #212428 0)`;
                     element.firstElementChild.textContent = `${count}%`;
                 };
                 if (count == MAX) {

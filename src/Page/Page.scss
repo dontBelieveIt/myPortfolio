@@ -9,6 +9,26 @@
 
 .section {
     border: 1px dotted $copper; 
+    background-color:  $dark;
     padding: 2rem; 
     margin-bottom: 2rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-dark {
+    border: 1px dotted $dark; 
+    padding: 2rem; 
+    margin-bottom: 2rem;
+}
+
+.text-field {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: left;
+    line-height: 0.8rem;
+    height:100%;
 }

@@ -4,7 +4,7 @@ export function Timeline() {
     return(
         <>
             <div className="container">
-                <span class="material-symbols-outlined">translate</span>
+                <span class="material-symbols-outlined">translate</span><span class="material-symbols-outlined">language_gb_english</span><span class="material-symbols-outlined">language_french</span>
                 <h4>Top of the page</h4>
                 <div className="separator"></div>
                 <h4>About me</h4>
@@ -17,6 +17,7 @@ export function Timeline() {
                 <div className="separator"></div>
                 <h4>Formation</h4>
                 <div className="separator"></div>
+                <h4>Réseaux sociaux</h4>
                 <h4>Contact me</h4>
             </div>
         </>

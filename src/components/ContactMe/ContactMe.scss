@@ -1,15 +1,68 @@
 @import "../../Page/Page.scss";
 
-// .form {
+input, textarea {
+    background-color: rgba(185, 108, 45, 0.1);
+    color: $copper; 
+    border: none; 
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1rem;
 
-// }
-
-.identity { 
-    width: 70%; 
-    height: 5rem;
+        &:focus {
+            background-color: rgba(185, 108, 45, 0.3);
+            color: $white; 
+            border: none;
+        }
 }
 
-.text-field { 
-    width: 70%;
+.form {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem; 
+    width: 80%;
+    color: $copper; 
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.identity { 
     height: 5rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &__item {
+        display: flex; 
+        flex-direction: row; 
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    & input {
+        width: 25%;
+    }
+}
+
+.message { 
+    text-align: left;
+    width: 100%;
+    gap: 0.8rem;
+
+    & textarea {
+        height: 5rem;
+        width: 100%; 
+        overflow-y: scroll;
+        padding: 1rem; 
+        margin-top: 0.8rem;
+        scrollbar-width: 0;
+    }
+
+    & textarea:focus {
+        height: 15rem;  
+        scrollbar-width: 1rem;
+    }
 }
