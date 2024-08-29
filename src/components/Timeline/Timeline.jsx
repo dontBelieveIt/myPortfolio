@@ -4,9 +4,9 @@ export function Timeline() {
     return(
         <>
             <div className="container">
-                <span class="material-symbols-outlined">translate</span><span class="material-symbols-outlined">language_gb_english</span><span class="material-symbols-outlined">language_french</span>
+                <button><span class="material-symbols-outlined">translate</span><span class="material-symbols-outlined">language_gb_english</span><span class="material-symbols-outlined">language_french</span></button>
+                
                 <h4>Qui suis-je ?</h4>
-
                 <div className="separator"></div>
                 <h4>Compétences</h4>
                 <div className="separator"></div>

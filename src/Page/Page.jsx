@@ -1,11 +1,11 @@
 import "./Page.scss";
 
+import { First } from "../components/First/First";
 import { AboutMe } from "../components/AboutMe/AboutMe";
-import { Passions } from "../components/Passions/Passions";
 
 import { Competence } from "../components/Competence/Competence";
 import { Langages } from "../components/Langages/Langages";
-import { Experiences } from "../components/Experiences/Experiences";
+// import { Experiences } from "../components/Experiences/Experiences";
 
 import { Formations } from "../components/Formations/Formations";
 import { Projets } from "../components/Projets/Projets";
@@ -18,11 +18,13 @@ export function Page() {
     return(
     <>
     <div className="page">
+        <First />
         <AboutMe />
-        <Passions />
+
         <Competence />
-        <Experiences />
+        {/* <Experiences /> */}
         <Formations />
+        
         <Langages />
         <Projets />
         <SocialLink />

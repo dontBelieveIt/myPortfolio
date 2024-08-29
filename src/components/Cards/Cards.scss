@@ -1,25 +1,36 @@
 @import "../../Page/Page.scss";
 
 .card {
-    height: 10rem; 
-    width: 16rem;
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex-column;
+    justify-content: center;
     align-items: center;
-    background-color: red;
-    border-radius: 5px;
-    border: 1px solid yellow;
+    background-color: $third;
+    border-radius: $radius;
+    cursor: pointer;
+    transition: .8s;
 
     &__image {
-        background-color: $white;
-        height: 100%;
-        width: 100%; 
+        background-color: $third;
+        height: 60%;
+        width: 60%; 
+        border-radius: $radius;
+        
+        
+        & > img { 
+        object-fit: cover;
+        height:100%; 
+        // background-color: deeppink;
+        border-radius: $radius;
+        // border: 1px solid deeppink;
+        }
     }
 
-    & > img { 
-        object-fit: cover;
-        height: 10rem; 
-        width: 16rem;
+    
+
+    &:hover {
+        height: 105%;
+        width: 105%;
+        transition: .8s;
+        background-color: $second;
     }
 }

@@ -1,13 +1,32 @@
 @import "../../Page/Page.scss";
 
-.about-me { 
-    display: flex; 
-    flex-direction: row;
-    gap: 2rem;
-
-    & img {
-        width: 20%;
-        aspect-ratio: 4 / 5;
-        object-fit: cover;
-    }
+.section-dark > img {
+    width: 30%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
 }
+
+#aboutMe {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me {
+    display:flex; 
+    flex-direction: column;
+}; 
+
+.passion-block {
+    // justify-content: space-evenly;
+    // align-items: center;
+    // margin-bottom : 2rem;
+    // gap: 1rem; 
+
+    // & > img {
+        height: 2rem; 
+        margin-right: .5rem;
+        margin-left: .5rem;
+    // }
+};

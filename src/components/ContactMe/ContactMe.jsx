@@ -40,7 +40,7 @@ export function ContactMe() {
                         </div>
                     </div>
                     <div className="message">
-                        <label>Message</label>
+                        {/* <label>Message</label> */}
                         <textarea placeholder="Message"></textarea>
                     </div>
                     <button type="submit">Envoyer</button>

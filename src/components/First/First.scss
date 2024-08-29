@@ -1,0 +1,11 @@
+@import "../../Page/Page.scss";
+
+button > img { 
+    height: 1rem;
+}
+
+.first { 
+    display: flex; 
+    flex-direction: row;
+    gap: 2rem;
+}

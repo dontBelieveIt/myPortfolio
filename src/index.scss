@@ -7,10 +7,40 @@
   margin: 0;
 }
 
-$copper : #B87333;
-$verdigris : #40B5AD; 
-$white : #faf2eb;
-$dark : #150c05;
+// Color theme
+$main : #dd6a6e;
+$second : #6e5156; 
+$third : #657d83; 
+$fourth : #23515c;
+
+$dark : #080c14;
+$white : #f6f2e1;
+
+// $main : #B87333;
+// $second : #824D74; 
+// $third : #BE7B72; 
+// $fourth : #401F71;
+
+// $dark : #150c05;
+// $white : #faf2eb;
+
+//Border radius : 
+$radius : 5px;
+
+@mixin flex-row {
+  display: flex; 
+  flex-direction: row; 
+}
+
+@mixin flex-column {
+  display: flex; 
+  flex-direction : column; 
+}
+
+@mixin justify-items {
+  justify-content: center;
+  align-items: center;
+}
 
 body {
   margin: 0;
@@ -23,10 +53,10 @@ body {
 }
 
 a {
-  color: $copper; 
+  color: $main; 
 
   &:hover {
-    color: $verdigris;
+    color: $second;
   }
 }
 
@@ -39,14 +69,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400 ;
   letter-spacing: 1.5px;
   line-height: 2;
-  color: $copper;
+  color: $main;
 }
 
 h1, h2 {
   text-transform: uppercase;
 }
 
+h1 {
+  font-size: 4rem;
+  color: $main;
+}
+h2 {
+  font-size: 2rem;
+  color: $second; 
+}
+h3 {
+  font-size: 1.5rem;
+  color: $third;
+}
+
 // code {
 //   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 //     monospace;
 // }
+

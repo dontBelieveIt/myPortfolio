@@ -1,34 +1,61 @@
 @import "../index.scss";
 
 .page {
-    display: flex; 
-    flex-direction: column;
+    @include flex-column; 
     margin: 2rem;
     width: 90%;
 }
 
-.section {
-    // border: 1px dotted $copper; 
-    background-color:  $dark;
+.section, .section-dark {
     padding: 2rem; 
     margin-bottom: 2rem;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column;
+    @include justify-items; 
+    border-radius: $radius;
+
+    & .section__img {
+        width: 30%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
 }
 
-.section-dark {
-    border: 1px dotted $dark; 
-    padding: 2rem; 
-    margin-bottom: 2rem;
+.section {  
+    background-color:  $dark;
 }
 
 .text-field {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: baseline;
+    // flex-direction: column;
+    // justify-content: space-evenly;
+    // align-items: baseline;
     text-align: left;
     line-height: 0.8rem;
     height:100%;
+}
+
+
+button {
+    color: $white; 
+    background-color: $dark;
+    border : 1px solid $main;
+    border-radius: $radius;
+    transition: .4s;
+    margin-top: 2rem; 
+    padding: 0.8rem;
+    letter-spacing: 1.15px;
+
+    &:hover {
+        color: $dark; 
+        background-color: $main;
+        transition: 0.4s;
+    }
+}
+
+
+img {
+    border-radius: $radius;
+}
+
+input:-internal-autofill-selected {
+    background-color: $third !important;
 }

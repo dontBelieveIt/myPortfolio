@@ -1,20 +1,20 @@
 @import "../../Page/Page.scss";
 
 .parent-skill {
-    width: 200px;
+    width: 100px;
     height: auto;
 }
 
 .skill {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    background-color: conic-gradient($copper 10%, #212428 0);
+    background-color: conic-gradient($main 10%, #212428 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,12 +35,12 @@
 }
 
 .progress-number {
-    color: $copper;
+    color: $main;
     font-size: 2rem;
 }
 
 .title {
-    color: $copper;
+    color: $main;
     font-size: 1.5rem;
     display: block;
     text-align: center;
