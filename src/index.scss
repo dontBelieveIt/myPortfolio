@@ -16,6 +16,9 @@ $fourth : #23515c;
 $dark : #080c14;
 $white : #f6f2e1;
 
+$section : rgba(8, 12, 20, 0.8);
+$section-dark : rgba(110, 81, 86, 0.2);
+
 // $main : #B87333;
 // $second : #824D74; 
 // $third : #BE7B72; 
@@ -48,11 +51,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  background-color:#000;
+  background-image: url('./assets/Pictures/stars-1845140_1280.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-clip: cover;
   color:  $white;
 }
 
-a {
+a :not(.container) {
   color: $main; 
 
   &:hover {

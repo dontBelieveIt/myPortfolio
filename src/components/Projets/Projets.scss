@@ -8,10 +8,26 @@
     gap: 1rem;
     margin: 0;
 
-
     & button {
         width: 20rem; 
         height: 14rem;
         margin: 0;
+        font-size: 2rem;
+        font-weight: 100;
+        letter-spacing: 5px;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $fourth;
+            border: 1px solid $fourth;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        @include flex-column;
+    }
+
+    @media only screen and (max-width: 1200) and (min-width: 600px) {
+        grid-template-columns: 1fr 1fr;
     }
 }

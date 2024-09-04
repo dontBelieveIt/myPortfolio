@@ -1,13 +1,18 @@
 @import "../../Page/Page.scss";
 
 .formation {
-    display: flex;
-    flex-direction: row;
+    display : flex;
+    width: 80%;
     gap: 2rem ;
     margin-top: .8rem;
+    justify-content: space-between;
 
-    & img {
-        width: 10%; 
-        object-fit: cover;
+    .cards {
+        background-color: transparent;
     }
+
+    // & img {
+    //     width: 10%; 
+    //     object-fit: cover;
+    // }
 }

@@ -2,19 +2,18 @@ import "./AboutMe.scss";
 
 import DataAboutMe from "../../data/AboutMe.json";
 
-import Illustration1 from "../../assets/astronaut-1784245_1280.jpg";
+import Illustration1 from "../../assets/Pictures/astronaut-1784245_1280.jpg";
 
-import SteamIcon from "../../assets/square-steam-brands-solid.svg"; 
-import SportIcon from "../../assets/person-running-solid.svg"; 
-import DrawIcon from "../../assets/pencil-solid.svg"; 
-import BookIcon from "../../assets/book-solid.svg";
+import SteamIcon from "../../assets/Hobbies/square-steam-brands-solid.svg"; 
+import SportIcon from "../../assets/Hobbies/person-running-solid.svg"; 
+import DrawIcon from "../../assets/Hobbies/pencil-solid.svg"; 
+import BookIcon from "../../assets/Hobbies/book-solid.svg";
 
 export function AboutMe() {
     return (
         <div className="section-dark" id="aboutMe">
 
             <div className="about-me">
-
             <h2>A propos de moi</h2>
             <div className="text-field">
             {DataAboutMe.map((item) => (

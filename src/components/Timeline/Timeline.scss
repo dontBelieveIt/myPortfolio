@@ -10,10 +10,61 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    & a {
+        text-decoration: none;
+        text-transform: uppercase; 
+        
+        a:hover {
+            opacity: 1;
+            color: $main;
+        } 
+        
+        &:not(:hover) {
+            color: $fourth;
+        }
+    } 
+    
+    @media screen and (max-width:600px) {
+        display: none;
+    }
+
+    @media only screen and (max-width: 1200) and (min-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
 .separator { 
     width: 2px; 
     border-left: 1px solid $white; 
     height: 20%;
     opacity: 0.5;
+
+    &:last-child {
+        border: none;
+    } 
+}
+
+
+#toggleButton {
+    display: none; 
+
+    &:hover {
+        color: $main; 
+        border: 1px solid $main;
+    }
+
+    @media screen and (max-width:1000px) {
+        display: block; 
+        position :fixed;
+        height: 3rem; 
+        width: 100%;
+        top: -2rem;
+        border: 1px solid $fourth;
+        border-left: none; 
+        border-right: none;
+        color: $fourth;
+        border-radius: 0px;
+        // background-color: transparent; 
+    }
 }

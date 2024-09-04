@@ -9,7 +9,6 @@ import { Langages } from "../components/Langages/Langages";
 
 import { Formations } from "../components/Formations/Formations";
 import { Projets } from "../components/Projets/Projets";
-import { SocialLink } from "../components/SocialLink/SocialLink";
 import { ContactMe } from "../components/ContactMe/ContactMe";
 
 import { Footer } from "../components/Footer/Footer";
@@ -21,13 +20,12 @@ export function Page() {
         <First />
         <AboutMe />
 
+        <Langages />
         <Competence />
         {/* <Experiences /> */}
         <Formations />
         
-        <Langages />
         <Projets />
-        <SocialLink />
         <ContactMe />
         
         <Footer />

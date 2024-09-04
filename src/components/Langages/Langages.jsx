@@ -3,21 +3,32 @@ import "./Langages.scss";
 import { Cards } from "../Cards/Cards";
 
 // Langagues Icons
-import html_logo from "../../assets/HTML5.svg"; 
-import css_logo from "../../assets/CSS3.svg"; 
-import js_logo from "../../assets/JavaScript.svg"; 
-import react_logo from "../../assets/React.svg"; 
-import node_logo from "../../assets/Node.js.svg"; 
-import express_logo from "../../assets/Express.svg"; 
-import sass_logo from "../../assets/Sass.svg"; 
+import html_logo from "../../assets/Languages/HTML5.svg"; 
+import css_logo from "../../assets/Languages/CSS3.svg"; 
+import js_logo from "../../assets/Languages/JavaScript.svg"; 
+import react_logo from "../../assets/Languages/React.svg"; 
+import sass_logo from "../../assets/Languages/Sass.svg"; 
+import node_logo from "../../assets/Languages/Node.js.svg"; 
+import express_logo from "../../assets/Languages/Express.svg"; 
+
+// Technology icons
+import git_logo from "../../assets/Technologies/Git.svg"; 
+import github_logo from "../../assets/Technologies/GitHub.svg"; 
+import vs_logo from "../../assets/Technologies/Visual_Studio_Code.svg"; 
+import figma_logo from "../../assets/Technologies/Figma.svg"; 
+import swagger_logo from "../../assets/Technologies/Swagger.svg"; 
+import postman_logo from "../../assets/Technologies/Postman.svg"; 
+import mongobd_logo from "../../assets/Technologies/MongoDB.svg"; 
+import mongoose_logo from "../../assets/Technologies/Mongoose.js.svg"; 
+
 
 export function Langages(params) {
     return(
-        <div className="section" >
+        <div className="section" id="language-section">
             
             <h2>Langues & Technologies</h2>
 
-            <div id="languages">
+            <div id="languages-technology">
                 <div>
                     <h3>Langues</h3>
                     <div className="cards-container">
@@ -77,26 +88,59 @@ export function Langages(params) {
                 <div>
                     <h3>Technologies et Outils</h3>
                     <div className="cards-container">
-                        <Cards 
-                        src={null}
+                         <Cards 
+                        src={git_logo}
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
                         />
+
                         <Cards 
-                        src={null}
+                        src={github_logo}
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
                         />
+                        
                         <Cards 
-                        src={null}
+                        src={vs_logo}
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
                         />
+
                         <Cards 
-                        src={null}
+                        src={figma_logo}
+                        alt={null}
+                        height={"10rem"}
+                        width={"16rem"}
+                        />
+
+                       
+
+                        <Cards 
+                        src={swagger_logo}
+                        alt={null}
+                        height={"10rem"}
+                        width={"16rem"}
+                        />
+
+                        <Cards 
+                        src={postman_logo}
+                        alt={null}
+                        height={"10rem"}
+                        width={"16rem"}
+                        />
+
+                        <Cards 
+                        src={mongobd_logo}
+                        alt={null}
+                        height={"10rem"}
+                        width={"16rem"}
+                        />
+
+                        <Cards 
+                        src={mongoose_logo}
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}

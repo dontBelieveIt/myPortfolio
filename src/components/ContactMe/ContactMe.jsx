@@ -1,5 +1,9 @@
 import "./ContactMe.scss";
 
+import LinkedinIcon from "../../assets/linkedin-brands-solid_pink.svg";
+import GitHubIcon from "../../assets/square-github-brands-solid_pink.svg";
+
+
 export function ContactMe() {
 
   function copyEmail(e) {
@@ -18,16 +22,25 @@ export function ContactMe() {
   };
     return (
         <>
-            <div className="section">
+            <div className="section" id="contact-section">
                 <h2>Contactez-moi !</h2>
+                <div className="contact-me" id="my-email">
+                    <h3>Mon e-mail:</h3>
+                    <input type="text" value="hello.i.am.roxane@gmail.com" id="myEmail"></input>
+                    <button onClick={copyEmail}>Copier</button> 
+                </div>
+                
+                <div className="contact-me" id="my-social">
+                    <h3>Mes réseaux :</h3>
+                    <img src={LinkedinIcon} alt="LinkedIn"/>
+                    <img src={GitHubIcon} alt="LinkedIn"/>
+                </div>
             </div>
 
-            <div className="section-dark">
-                    <input type="text" value="hello.i.am.roxane@gmail.com" id="myEmail"></input>
-                    <button onClick={copyEmail}>Copier</button>
-            </div>
+           
 
             <div className="section">  
+                <h2>Ou écrivez-moi directement</h2>
                 <div className="form">
                     <div className="identity">
                         <div className="identity__item">
