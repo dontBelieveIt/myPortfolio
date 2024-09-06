@@ -11,7 +11,7 @@ import project5 from "../../assets/Projects/MonVieuxGrimoire_Logo.svg";
 
 export function Projets(params) {
     return(
-        <div className="section-dark" id="project-section">
+        <div className="section" id="project-section">
             <h2>Projets</h2>
 
             <div className="projet__cards-container">

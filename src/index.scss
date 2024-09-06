@@ -5,6 +5,11 @@
 * { 
   box-sizing: border-box;
   margin: 0;
+  transition-timing-function: ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 // Color theme
@@ -16,8 +21,8 @@ $fourth : #23515c;
 $dark : #080c14;
 $white : #f6f2e1;
 
-$section : rgba(8, 12, 20, 0.8);
-$section-dark : rgba(110, 81, 86, 0.2);
+$section : rgba(8, 12, 20, 0.5);
+$section-dark : rgba(110, 81, 86, 0.5);
 
 // $main : #B87333;
 // $second : #824D74; 
@@ -56,14 +61,17 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-clip: cover;
+  background-color: #000;
   color:  $white;
 }
 
-a :not(.container) {
-  color: $main; 
+a {
+  color: $white; 
+  text-decoration: none;
+  cursor: pointer;
 
   &:hover {
-    color: $second;
+    color: $main;
   }
 }
 

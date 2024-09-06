@@ -1,7 +1,7 @@
 @import "../../Page/Page.scss";
 
 input, textarea {
-    background-color: rgba(221, 106, 110, 0.1);
+    background-color: rgba(221, 106, 110, 0.2);
     color: $main;
     border: none;
     border-radius: $radius;
@@ -9,13 +9,7 @@ input, textarea {
     font-size: 1rem;
     transition: 0.8s;
     min-width: 15rem;
-
-    &:focus {
-        background-color: rgba(221, 106, 110, 0.3);
-        color: $white;
-        border: none;
-        transition: 0.8s;
-    }
+    height: 3.5rem;
 }
 
 .form {
@@ -28,6 +22,7 @@ input, textarea {
     color: $main;
     text-transform: uppercase;
     font-size: 1rem;
+    gap: 1rem;
 
     & button {
         width: 25%;
@@ -91,13 +86,13 @@ input, textarea {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
 
     &__item {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 0.8rem;
+        // gap: 0.8rem;
     }
 
     & input {
@@ -108,20 +103,21 @@ input, textarea {
     @media screen and (max-width:1200px) {
         @include flex-column;
         gap: 0.2rem;
+        height: 100%;
     }
 }
 
 .message {
     text-align: left;
     width: 100%;
-    gap: 0.8rem;
+    // border: 1px solid lime;
 
     & textarea {
         height: 5rem;
         width: 100%;
         overflow-y: scroll;
         padding: 1rem;
-        margin-top: 0.8rem;
+        // margin-top: 0.8rem;
         scrollbar-width: 0;
         font-family: 'Inter', sans-serif;
         transition: .8s;

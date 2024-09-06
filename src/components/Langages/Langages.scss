@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: baseline;
     gap: 2rem;
-
+ 
     @media screen and (max-width:600px) {
         @include flex-column;
     }
@@ -20,6 +20,19 @@
     display: grid; 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    gap: 1rem;
+    gap: 1rem;   
+      
+      &:hover > *:not(:hover){
+        // opacity: 0.5;
+        -webkit-filter: grayscale(60%);
+        filter: grayscale(60%);
+        transition: 0.4s;
+
+        & > img {
+            -webkit-filter: grayscale(70%);
+            filter: grayscale(70%);
+            transition: 0.4s;
+        }
+      }
 }
 

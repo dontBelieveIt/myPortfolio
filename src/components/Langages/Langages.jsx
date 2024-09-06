@@ -37,6 +37,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"HTML 5"}
+                        description={null}
                         /> 
 
                         <Cards 
@@ -44,6 +46,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"CSS3"}
+                        description={null}
                         />
                         
                         <Cards 
@@ -51,6 +55,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"JavaScript"}
+                        description={null}
                         />
                         
                         <Cards 
@@ -58,6 +64,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"ReactJS"}
+                        description={null}
                         />
 
                         <Cards 
@@ -65,6 +73,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"Sass"}
+                        description={null}
                         />
 
                         <Cards 
@@ -72,6 +82,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"NodeJS"}
+                        description={null}
                         />
 
                         <Cards 
@@ -79,6 +91,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"Express"}
+                        description={null}
                         />
                         
                         
@@ -93,6 +107,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"Git"}
+                        description={null}
                         />
 
                         <Cards 
@@ -100,6 +116,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"GitHub"}
+                        description={null}
                         />
                         
                         <Cards 
@@ -107,6 +125,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"Visual Code Studio"}
+                        description={null}
                         />
 
                         <Cards 
@@ -114,6 +134,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"Figma"}
+                        description={null}
                         />
 
                        
@@ -123,6 +145,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"Swagger"}
+                        description={null}
                         />
 
                         <Cards 
@@ -130,6 +154,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"Postman"}
+                        description={null}
                         />
 
                         <Cards 
@@ -137,6 +163,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"MongoDB"}
+                        description={null}
                         />
 
                         <Cards 
@@ -144,6 +172,8 @@ export function Langages(params) {
                         alt={null}
                         height={"10rem"}
                         width={"16rem"}
+                        title={"Mongoose"}
+                        description={null}
                         />
                         
                     </div>

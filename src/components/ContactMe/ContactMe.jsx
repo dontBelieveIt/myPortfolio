@@ -25,13 +25,13 @@ export function ContactMe() {
             <div className="section" id="contact-section">
                 <h2>Contactez-moi !</h2>
                 <div className="contact-me" id="my-email">
-                    <h3>Mon e-mail:</h3>
+                    <h3>Mon e-mail </h3>
                     <input type="text" value="hello.i.am.roxane@gmail.com" id="myEmail"></input>
-                    <button onClick={copyEmail}>Copier</button> 
+                    <button onClick={copyEmail}><span class="material-symbols-outlined">content_copy</span>Copier</button> 
                 </div>
                 
                 <div className="contact-me" id="my-social">
-                    <h3>Mes réseaux :</h3>
+                    <h3>Mes réseaux </h3>
                     <img src={LinkedinIcon} alt="LinkedIn"/>
                     <img src={GitHubIcon} alt="LinkedIn"/>
                 </div>
@@ -56,7 +56,7 @@ export function ContactMe() {
                         {/* <label>Message</label> */}
                         <textarea placeholder="Message"></textarea>
                     </div>
-                    <button type="submit">Envoyer</button>
+                    <button type="submit"><span class="material-symbols-outlined">send</span> Envoyer</button>
                 </div>
             </div>
         </>

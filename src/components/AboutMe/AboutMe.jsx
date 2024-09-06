@@ -11,7 +11,7 @@ import BookIcon from "../../assets/Hobbies/book-solid.svg";
 
 export function AboutMe() {
     return (
-        <div className="section-dark" id="aboutMe">
+        <div className="section" id="aboutMe">
 
             <div className="about-me">
             <h2>A propos de moi</h2>

@@ -9,21 +9,48 @@
     cursor: pointer;
     transition: .8s;
 
+    position: relative; 
+    transform-style: preserve-3d;
+
     &__image {
         background-color: transparent;
-        height: 60%;
-        width: 60%; 
+        height: 100%;
+        width: 100%; 
         border-radius: $radius;
         transition: .8s;
+
+        backface-visibility: hidden;
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include flex-row; 
+        @include justify-items;
         
         & > img { 
         object-fit:scale-down;
-        height:100%; 
-        max-width: 100%;
-        // background-color: deeppink;
+        height: 60%; 
+        max-width: 60%;
         border-radius: $radius;
         }
     }
+
+    &__back {
+        transform: rotateY(180deg);
+        z-index: -2;
+        @include flex-column; 
+        @include justify-items; 
+        border-radius : $radius; 
+        height: 100%; 
+        width: 100%;
+
+        & > h3 + p {
+            display: block; 
+            opacity: 0;
+            color : $white;
+        }
+    }   
 
     & .overlay {
         height: 60%; 
@@ -42,7 +69,23 @@
         transition: .8s;
         border: 1px solid $fourth;
         background-color: $fourth;
+
+        transform: rotateY(180deg);
+        
+        img {
+            opacity: 0;
+        }   
+ 
+        .back {
+            transform: rotateY(0);
+            border: 1px solid yellow;
+        }
+
+        &> h3, p {
+            opacity: 1;
+        }
     }
+
 }
 
 // .formation {

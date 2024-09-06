@@ -14,6 +14,7 @@ import { ContactMe } from "../components/ContactMe/ContactMe";
 import { Footer } from "../components/Footer/Footer";
 
 export function Page() {
+    
     return(
     <>
     <div className="page">

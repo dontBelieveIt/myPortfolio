@@ -12,8 +12,11 @@ export function Timeline() {
             setToggle(!toggle)}}>
                 <span class="material-symbols-outlined">menu</span>
             </button>
+
             <div className="container">
-                <button><span class="material-symbols-outlined">translate</span><span class="material-symbols-outlined">language_gb_english</span><span class="material-symbols-outlined">language_french</span></button>
+                <button id="btn_translate"><span class="material-symbols-outlined">translate</span><span class="material-symbols-outlined">language_gb_english</span><span class="material-symbols-outlined">language_french</span></button>
+                <div className="separator"></div>
+
                 <a href="#first-section"><h4>Qui suis-je ?</h4></a>
                 <div className="separator"></div>
                 <a href="#language-section"><h4>Langues et Technologies</h4></a>

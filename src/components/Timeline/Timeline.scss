@@ -1,7 +1,7 @@
 @import "../../index.scss";
 
 .container {
-    border: 1px dotted #333; 
+    border-right: 1px dotted $main; 
     width: 10%; 
     height: 100vh;
     position: sticky;
@@ -10,21 +10,39 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $dark;
+    color: $white;
 
-    & a {
-        text-decoration: none;
-        text-transform: uppercase; 
+    & h4, a {
+        text-transform: uppercase;
+        color: $white;
+        position: relative;
+        transition: .4s;
+    }
+
+    & h4:hover, h4:focus, a:hover, a:focus {
+        color: $main;
+        font-size: large;
+        border-left: 3px solid $main;
+        border-right: 3px solid $main;
+        width: 100%;
+        transition: .4s;
+    }
+
+    // & h4:not(:hover), h4:not(:focus), a:not(:hover), a:not(:focus) {
+    //     color: $second;
+    //     font-size: large;
+    // }
+
+    & button {
+        border: none;
+        height: 5rem;
         
-        a:hover {
-            opacity: 1;
-            color: $main;
-        } 
-        
-        &:not(:hover) {
-            color: $fourth;
+        &:hover {
+        background-color: transparent;
         }
     } 
-    
+
     @media screen and (max-width:600px) {
         display: none;
     }
@@ -40,11 +58,20 @@
     height: 20%;
     opacity: 0.5;
 
+    &:first-of-type {
+        border:none; 
+        height: 10%;
+    } 
+
     &:last-child {
         border: none;
     } 
 }
 
+#btn_translate {
+    margin-top: 1rem;
+    border: 1px solid $main; 
+}
 
 #toggleButton {
     display: none; 
@@ -56,11 +83,11 @@
 
     @media screen and (max-width:1000px) {
         display: block; 
-        position :fixed;
+        position: sticky;
         height: 3rem; 
         width: 100%;
-        top: -2rem;
         border: 1px solid $fourth;
+        top: 0.1rem;
         border-left: none; 
         border-right: none;
         color: $fourth;

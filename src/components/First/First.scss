@@ -1,13 +1,50 @@
 @import "../../Page/Page.scss";
 
-button > img { 
-    height: 1rem;
+.first-mobile {
+    @media screen and (min-width:600px) {
+        display: none;
+    }
+}
+.first-desktop {
+    @media screen and (max-width:600px) {
+        display: none;
+    }
 }
 
 .first { 
     display: flex; 
     flex-direction: row;
     gap: 2rem;
+
+    & h2, h3 {
+        color: $white;
+    }
+
+    &__container {
+        @include flex-column;
+    }
+
+    &__btn-container {
+        @include flex-column; 
+        @include justify-items;
+        gap: 0.8rem;
+
+        &__items {
+            @include flex-row; 
+            justify-content: left;
+            width: 100%; 
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            @media screen and (max-width:600px) {
+                justify-content: space-between;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            @include flex-column;
+        }
+    }
 
     @media screen and (max-width:600px) {
         @include flex-column;
@@ -16,4 +53,25 @@ button > img {
     // @media only screen and (max-width: 1200) and (min-width: 600px) {
     //     grid-template-columns: 1fr 1fr;
     // }
+}
+
+#downloadCV {
+    width: 100%;
+
+    & a {
+        color: $white; 
+        text-transform: unset;
+        @include flex-row; 
+        @include justify-items;
+        align-self: center;
+        gap: 0.2rem;
+
+        &:hover {
+            color: $second;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        margin: 2rem 0;
+    }
 }

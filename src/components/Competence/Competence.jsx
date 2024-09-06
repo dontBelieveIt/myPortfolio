@@ -2,12 +2,12 @@ import "./Competence.scss";
 
 export function Competence() {
     return(
-        <div className="section-dark" id="competence-section">
+        <div className="section" id="competence-section">
             <h2>mes compétences</h2>
             <div className="competence">
-                <table id="html_css">
+                <table id="front-end">
                     <tr>
-                        <th>HTML/CSS</th>
+                        <th>Front-end</th>
                     </tr>
                     <tr>
                         <td>Implémenter une interface responsive avec HTML et CSS.</td>
@@ -17,12 +17,6 @@ export function Competence() {
                     </tr>
                     <tr>
                         <td>Mettre en oeuvre des animations CSS.</td>
-                    </tr>
-                </table>
-
-                <table id="JavaScript">
-                    <tr>
-                        <th>JavaScript</th>
                     </tr>
                     <tr>
                         <td>Gérer les événements utilisateurs avec JavaScript.</td>
