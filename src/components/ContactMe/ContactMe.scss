@@ -2,7 +2,7 @@
 
 input, textarea {
     background-color: rgba(221, 106, 110, 0.2);
-    color: $main;
+    color: $white;
     border: none;
     border-radius: $radius;
     padding: 0.8rem;
@@ -12,7 +12,7 @@ input, textarea {
     height: 3.5rem;
 }
 
-.form {
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
