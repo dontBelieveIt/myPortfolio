@@ -1,4 +1,5 @@
 import "./Page.scss";
+import "./Section.scss";
 
 import { First } from "../components/First/First";
 import { AboutMe } from "../components/AboutMe/AboutMe";

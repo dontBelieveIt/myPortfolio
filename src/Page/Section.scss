@@ -1,0 +1,209 @@
+@import "../index.scss";
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    position: relative;
+    padding: 2rem; 
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    
+    border-radius: $radius;
+    @include transition;
+    gap: 1rem;
+
+    &__img {
+        width: 30%;
+        border-radius: $radius;
+        height: 100%;
+
+        & img {
+            // aspect-ratio: 4 / 5;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        @media screen and (max-width:1000px) {
+            width: 100%; 
+            height: auto;
+        }
+    }
+
+    &__text {
+        width: 65%; 
+        height: auto;
+        text-align: left;
+        @include flex-column;
+
+        & h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+        }
+            
+        @media screen and (max-width:1000px) {
+            width: 100%;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        @include flex-column; 
+        @include justify-items;
+    }
+
+    &__container-row {
+        @include flex-row; 
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @media screen and (max-width:1000px) {
+            @include flex-column;
+            @include justify-items;
+            gap:1rem;
+        }
+    }
+
+    @media screen and (max-width:1000px) {
+        padding: 2rem;
+        margin: 1rem
+    }
+    
+    @media screen and (max-width:680px) {
+        margin:0;
+        padding:1rem; 
+        border-radius: 0;
+        @include flex-column;
+        @include justify-items;
+    }
+}
+
+// Color gestion
+.section:nth-child(odd){
+    background-color: $section;
+    flex-direction: row;
+    border: 3px solid $third;
+
+    &:hover, &:focus {
+        box-shadow: 
+            0 0 1px rebeccapurple, 
+            inset 0 0 1px rebeccapurple, 
+            0 0 1px rebeccapurple,
+            inset 0 0 1px rebeccapurple,
+            0 0 1px rebeccapurple,
+            inset 0 0 1px rebeccapurple; 
+    }
+    
+    h2 {
+        color: $third;
+    }
+
+    button {
+        background-color: $section;
+        border: 1px solid $third; 
+
+        &:hover {
+            background-color: $third;
+        }
+    }
+
+    .card {
+        background-color: $fourth;
+
+        &__image {
+            background-color: $fourth;
+        }
+
+    }
+
+    @media screen and (min-width:680px) {
+        box-shadow:
+            0 0 8px $third,   
+            inset 0 0 8px $third,
+            0 0 16px $third,
+            inset 0 0 16px $third,
+            0 0 32px $third,
+            inset 0 0 32px $third; 
+    }
+
+    @media screen and (max-width:1000px) {
+        background-color: $tablette-section;
+        border-left:none; 
+        border-right: none;
+        border-top: none;
+    }
+
+    @media screen and (max-width:680px) {
+        box-shadow: none;
+        border-radius: 0;
+        border: none;
+        background-color: $mobile-section;
+    }
+}
+
+.section:nth-child(even){
+    background-color: $section-two;
+    flex-direction: row-reverse;
+    border: 3px solid $main;
+        
+    &:hover, &:focus {
+        box-shadow: 
+            0 0 1px rebeccapurple, 
+            inset 0 0 1px rebeccapurple, 
+            0 0 1px rebeccapurple,
+            inset 0 0 1px rebeccapurple,
+            0 0 1px rebeccapurple,
+            inset 0 0 1px rebeccapurple; 
+    }
+
+    h2 {
+        color: $main;
+    }
+
+    button {
+        background-color: $section-two;
+        border: 1px solid $main;
+
+        &:hover {
+            background-color: $main;
+        }
+    }
+
+    .card {
+        background-color: $second;
+
+        &__image {
+            background-color: $second;
+        }
+
+    }
+
+    @media screen and (min-width:680px) {
+        box-shadow:
+            0 0 8px $main,   
+            inset 0 0 8px $main,
+            0 0 16px $main,
+            inset 0 0 16px $main,
+            0 0 32px $main,
+            inset 0 0 32px $main;
+    }
+    
+    @media screen and (max-width:1000px) {
+        background-color: $tablette-section-dark;
+        flex-direction: column-reverse;
+        border-left:none; 
+        border-right: none;
+        border-top: none;
+    }
+
+    @media screen and (max-width:680px) {
+        box-shadow: none;
+        border-radius: 0;
+        border: none;
+        background-color: $mobile-section-dark;
+    }
+}

@@ -3,16 +3,14 @@
 .page {
     @include flex-column; 
     margin: 2rem;
-    width: 90%;
-
-    @media screen and (max-width:600px) {
+    margin-right: $container;
+    margin-left: $container;
+    width: 100%;
+    box-sizing: border-box;
+    
+    @media screen and (max-width:1000px) {
         margin:0;
         width:100%;
-    }
-
-    @media only screen and (max-width: 1200) and (min-width: 600px) {
-        margin: 1rem;
-        width: 100%;
     }
 }
 
@@ -29,7 +27,7 @@ a {
 
 button {
     color: $white !important; 
-    background-color: $dark;
+    background-color: transparent;
     border : 1px solid $main;
     border-radius: $radius;
     transition: .4s;
@@ -63,41 +61,6 @@ button {
     }
 }
 
-.section {
-    position: relative;
-    padding: 2rem; 
-    margin-bottom: 2rem;
-    @include flex-column;
-    @include justify-items; 
-    border-radius: $radius;
-    transition: 0.4s;
-    transition-timing-function: ease-in-out ;
-
-    & .section__img {
-        width: 30%;
-        aspect-ratio: 4 / 5;
-        object-fit: cover;
-
-        @media screen and (max-width:600px) {
-            width: 100%; 
-        }
-    
-        // @media only screen and (max-width: 1200) and (min-width: 600px) {
-        //     grid-template-columns: 1fr 1fr;
-        // }
-    }
-
-    @media screen and (max-width:600px) {
-        margin:0;
-        border-radius: none;
-    }
-
-    @media only screen and (max-width: 1200) and (min-width: 600px) {
-        margin: 0.5rem;
-    }
-}
-.section:nth-child(odd){background-color: $section;}
-.section:nth-child(even){background-color: $section-dark;}
 
 .text-field {
     // flex-direction: column;
@@ -106,6 +69,10 @@ button {
     text-align: left;
     line-height: 0.8rem;
     height:100%;
+
+    h1, h2, h3, h4, h5, h6 {
+        text-align: left;
+    }
 }
 
 img {
@@ -114,4 +81,17 @@ img {
 
 input:-internal-autofill-selected {
     background-color: $third !important;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #bc13fe,
+      0 0 82px #bc13fe,
+      0 0 92px #bc13fe,
+      0 0 102px #bc13fe,
+      0 0 151px #bc13fe;
 }

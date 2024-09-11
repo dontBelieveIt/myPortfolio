@@ -25,161 +25,137 @@ import mongoose_logo from "../../assets/Technologies/Mongoose.js.svg";
 export function Langages(params) {
     return(
         <div className="section" id="language-section">
-            
-            <h2>Langues & Technologies</h2>
 
-            <div id="languages-technology">
-                <div>
-                    <h3>Langues</h3>
-                    <div className="cards-container">
-                        <Cards 
-                        src={html_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"HTML 5"}
-                        description={null}
-                        /> 
+            <div className="section__container">
+                <h2>Langues & Technologies</h2>
 
-                        <Cards 
-                        src={css_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"CSS3"}
-                        description={null}
-                        />
-                        
-                        <Cards 
-                        src={js_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"JavaScript"}
-                        description={null}
-                        />
-                        
-                        <Cards 
-                        src={react_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"ReactJS"}
-                        description={null}
-                        />
+                <div id="languages-technology">
+                    <div className="language-item">
+                        <h3>Langues</h3>
+                        <div className="cards-container">
+                            <Cards 
+                            src={html_logo}
+                            alt={null}
+                            title={"HTML 5"}
+                            description={null}
+                            link={null}
+                            /> 
 
-                        <Cards 
-                        src={sass_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"Sass"}
-                        description={null}
-                        />
+                            <Cards 
+                            src={css_logo}
+                            alt={null}
+                            title={"CSS3"}
+                            description={null}
+                            link={null}
+                            />
+                            
+                            <Cards 
+                            src={js_logo}
+                            alt={null}
+                            title={"JavaScript"}
+                            description={null}
+                            link={null}
+                            />
+                            
+                            <Cards 
+                            src={react_logo}
+                            alt={null}
+                            title={"ReactJS"}
+                            description={null}
+                            link={null}
+                            />
 
-                        <Cards 
-                        src={node_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"NodeJS"}
-                        description={null}
-                        />
+                            <Cards 
+                            src={sass_logo}
+                            alt={null}
+                            title={"Sass"}
+                            description={null}
+                            link={null}
+                            />
 
-                        <Cards 
-                        src={express_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"Express"}
-                        description={null}
-                        />
-                        
-                        
+                            <Cards 
+                            src={node_logo}
+                            alt={null}
+                            title={"NodeJS"}
+                            description={null}
+                            link={null}
+                            />
+
+                            <Cards 
+                            src={express_logo}
+                            alt={null}
+                            title={"Express"}
+                            description={null}
+                            link={null}
+                            />
+                        </div>
                     </div>
-                </div>
 
-                <div>
-                    <h3>Technologies et Outils</h3>
-                    <div className="cards-container">
-                         <Cards 
-                        src={git_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"Git"}
-                        description={null}
-                        />
+                    <div className="language-item">
+                        <h3>Technologies et Outils</h3>
+                        <div className="cards-container">
+                            <Cards 
+                            src={git_logo}
+                            alt={null}
+                            title={"Git"}
+                            description={null}
+                            />
 
-                        <Cards 
-                        src={github_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"GitHub"}
-                        description={null}
-                        />
+                            <Cards 
+                            src={github_logo}
+                            alt={null}
+                            title={"GitHub"}
+                            description={null}
+                            />
+                            
+                            <Cards 
+                            src={vs_logo}
+                            alt={null}
+                            title={"Visual Code Studio"}
+                            description={null}
+                            />
+
+                            <Cards 
+                            src={figma_logo}
+                            alt={null}
+                            title={"Figma"}
+                            description={null}
+                            />
+
                         
-                        <Cards 
-                        src={vs_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"Visual Code Studio"}
-                        description={null}
-                        />
 
-                        <Cards 
-                        src={figma_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"Figma"}
-                        description={null}
-                        />
+                            <Cards 
+                            src={swagger_logo}
+                            alt={null}
+                            title={"Swagger"}
+                            description={null}
+                            />
 
-                       
+                            <Cards 
+                            src={postman_logo}
+                            alt={null}
+                            title={"Postman"}
+                            description={null}
+                            />
 
-                        <Cards 
-                        src={swagger_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"Swagger"}
-                        description={null}
-                        />
+                            <Cards 
+                            src={mongobd_logo}
+                            alt={null}
+                            title={"MongoDB"}
+                            description={null}
+                            />
 
-                        <Cards 
-                        src={postman_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"Postman"}
-                        description={null}
-                        />
-
-                        <Cards 
-                        src={mongobd_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"MongoDB"}
-                        description={null}
-                        />
-
-                        <Cards 
-                        src={mongoose_logo}
-                        alt={null}
-                        height={"10rem"}
-                        width={"16rem"}
-                        title={"Mongoose"}
-                        description={null}
-                        />
-                        
+                            <Cards 
+                            src={mongoose_logo}
+                            alt={null}
+                            title={"Mongoose"}
+                            description={null}
+                            />
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

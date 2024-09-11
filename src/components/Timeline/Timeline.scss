@@ -1,38 +1,51 @@
 @import "../../index.scss";
 
+
 .container {
     border-right: 1px dotted $main; 
-    width: 10%; 
+    width: $container; 
     height: 100vh;
-    position: sticky;
+    z-index: 10;
+    position: fixed;
     top:0;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    left: 0;
+    padding: 3rem 1rem;
+
+    display: none;
+
+    @include flex-column; 
+    @include justify-items; 
+
     background-color: $dark;
-    color: $white;
+
+    // opacity: 0;
+    // transition: 2s;
+
+    &:hover {
+        opacity: 1;
+        transition: 2s;
+        
+        & > a:not(:hover), h4:not(:hover) {
+            color: $fourth !important;
+        }
+    }
 
     & h4, a {
         text-transform: uppercase;
-        color: $white;
+        color: $third;
         position: relative;
         transition: .4s;
+        width: 100%;
     }
 
     & h4:hover, h4:focus, a:hover, a:focus {
         color: $main;
-        font-size: large;
-        border-left: 3px solid $main;
-        border-right: 3px solid $main;
+        border-top: 1px solid $main;
+        border-bottom: 3px solid $main;
         width: 100%;
         transition: .4s;
+        position: relative;
     }
-
-    // & h4:not(:hover), h4:not(:focus), a:not(:hover), a:not(:focus) {
-    //     color: $second;
-    //     font-size: large;
-    // }
 
     & button {
         border: none;
@@ -43,11 +56,11 @@
         }
     } 
 
-    @media screen and (max-width:600px) {
-        display: none;
+    @media screen and (max-width:680px) {
+        display: sticky;
     }
 
-    @media only screen and (max-width: 1200) and (min-width: 600px) {
+    @media only screen and (max-width: 1200) and (min-width: 680px) {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -68,30 +81,8 @@
     } 
 }
 
-#btn_translate {
-    margin-top: 1rem;
-    border: 1px solid $main; 
-}
+// #btn_translate {
+//     margin-top: 1rem;
+//     border: 1px solid $main; 
+// }
 
-#toggleButton {
-    display: none; 
-
-    &:hover {
-        color: $main; 
-        border: 1px solid $main;
-    }
-
-    @media screen and (max-width:1000px) {
-        display: block; 
-        position: sticky;
-        height: 3rem; 
-        width: 100%;
-        border: 1px solid $fourth;
-        top: 0.1rem;
-        border-left: none; 
-        border-right: none;
-        color: $fourth;
-        border-radius: 0px;
-        // background-color: transparent; 
-    }
-}

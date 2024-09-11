@@ -1,21 +1,27 @@
 @import "../../Page/Page.scss";
 
-.competence {
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 2rem;
+#competence-section {
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:680px) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-
-    // @media only screen and (max-width: 1200) and (min-width: 600px) {
-    //     grid-template-columns: 1fr 1fr;
-    // }
+}
+#competence-tab {
+    align-items: flex-start;
+        
+    @media screen and (max-width:680px) {
+        @include flex-column; 
+        @include justify-items;
+        grid-template-columns: none;
+    }    
+    
+    @media screen and (min-width:680px) and (max-width: 1000px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
 }
 
 table {
@@ -56,12 +62,33 @@ table {
         border-bottom-left-radius: $radius;
     }
     
-    tr:nth-child(even){background-color: $third;}
+    tr:nth-child(even){background-color: $second;}
     tr:nth-child(odd){background-color: $fourth;}
+
+    @media screen and (max-width:680px) {
+        width: 100%
+    }
+    
+    @media screen and (max-width:1000px) {
+        width: 18rem;
+    }
 }
 
 table:hover {
     width: 15rem;
+
+    @media screen and (max-width:680px) {
+        width: 100%;   
+    }
+    
+    @media screen and (max-width:1000px) {
+        width: 18rem;
+    }
+
+    th {
+        background-color: transparent !important;
+        border: 1px solid $main;
+    }
 
     th:last-child {
         border-bottom-left-radius : 0; 
@@ -79,7 +106,17 @@ table:hover {
 }
 
 table, table:hover {
-    transition: 0.4s;
+    @include transition; 
 }
 
+#competence-section {
+    transition: 4s;
+    transition-timing-function: ease-in-out;
+    height: 100%;
+  
+  &:hover {
+    transition: 4s;
+    height: auto;
+  }
 
+}

@@ -2,8 +2,8 @@ import "./ContactMe.scss";
 
 import { useState } from "react";
 
-import LinkedinIcon from "../../assets/linkedin-brands-solid_pink.svg";
-import GitHubIcon from "../../assets/square-github-brands-solid_pink.svg";
+import LinkedinIcon from "../../assets/linkedin-brands-solid_white.svg";
+import GitHubIcon from "../../assets/square-github-brands-solid_white.svg";
 
 
 export function ContactMe() {
@@ -28,7 +28,7 @@ export function ContactMe() {
         const [result, setResult] = useState("");
         const onSubmit = async (event) => {
             event.preventDefault();
-            setResult("Sending....");
+            setResult("Envoi....");
             const formData = new FormData(event.target);
 
             formData.append("access_key", "b64cbb3a-6e63-4fc0-b0a7-232ee04bc39f");
@@ -41,7 +41,7 @@ export function ContactMe() {
             const data = await response.json();
 
             if (data.success) {
-            setResult("Form Submitted Successfully");
+            setResult("Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais :)");
             event.target.reset();
             } else {
             console.log("Error", data);
@@ -52,48 +52,57 @@ export function ContactMe() {
         <>
             <div className="section" id="contact-section">
 
-                {/* Copy mail section */}
-                <h2>Contactez-moi !</h2>
-                <div className="contact-me" id="my-email">
-                    <h3>Mon e-mail </h3>
-                    <input type="text" value="hello.i.am.roxane@gmail.com" id="myEmail"></input>
-                    <button onClick={copyEmail}><span class="material-symbols-outlined">content_copy</span>Copier</button> 
-                </div>
-                
-                <div className="contact-me" id="my-social">
-                    <h3>Mes réseaux </h3>
-                    <img src={LinkedinIcon} alt="LinkedIn"/>
-                    <img src={GitHubIcon} alt="LinkedIn"/>
+                <div className="section__container">
+                    <h2>Contactez-moi !</h2>
+                    <div className="contact-me" id="my-email">
+                        <h3>Mon e-mail </h3>
+                        <div className="phone-container">
+                            <input type="text" value="hello.i.am.roxane@gmail.com" id="myEmail"></input>
+                            <button onClick={copyEmail}><span class="material-symbols-outlined">content_copy</span>Copier</button> 
+                        </div>
+                    </div>
+                    
+                    <div className="contact-me" id="my-social">
+                        <h3>Mes réseaux</h3>
+                        <a href="https://www.linkedin.com/in/roxane-9849892b5088023454049824/" target="_blank" rel="noreferrer">
+                            <img src={LinkedinIcon} alt="LinkedIn"/>
+                        </a>
+                        <a href="https://github.com/dontBelieveIt/" target="_blank" rel="noreferrer">
+                            <img src={GitHubIcon} alt="LinkedIn"/>
+                        </a>
+                    </div>
                 </div>
             </div>
            
-            {/* Write to me sedction */}
             <div className="section">  
-                <h2>Ou écrivez-moi directement</h2>
+                <div className="section__container">
+                    <h2>Ou écrivez-moi directement</h2>
 
-                <form onSubmit={onSubmit}> 
-                    
-                    <input type="hidden" name="access_key" value="b64cbb3a-6e63-4fc0-b0a7-232ee04bc39f"></input>
-                    <input type="hidden" name="from_name" value="Portfolio"></input>
-                    <input type="checkbox" name="botcheck" class="hidden" style={{"display":"none"}}></input>
+                    <form onSubmit={onSubmit}> 
+                        
+                        <input type="hidden" name="access_key" value="b64cbb3a-6e63-4fc0-b0a7-232ee04bc39f"></input>
+                        <input type="hidden" name="from_name" value="Portfolio"></input>
+                        <input type="checkbox" name="botcheck" class="hidden" style={{"display":"none"}}></input>
 
-                    <div className="identity"> 
-                        <div className="identity__item">
-                           <input type="text" name="email" placeholder="E-mail de contact" required></input>
+                        <div className="identity"> 
+                            <div className="identity__item">
+                            <input type="text" name="email" placeholder="E-mail de contact" required></input>
+                            </div>
+
+                            <div className="identity__item">
+                                {/* <label name="sujet">Sujet</label> */}
+                                <input type="text" name="subject" placeholder="Sujet" required></input>
+                            </div>
                         </div>
-
-                        <div className="identity__item">
-                            {/* <label name="sujet">Sujet</label> */}
-                            <input type="text" name="subject" placeholder="Sujet" required></input>
+                        <div className="message">
+                            <textarea  name="message" placeholder="Message" required></textarea>
                         </div>
+                        <button type="submit"><span class="material-symbols-outlined">send</span> Envoyer</button>
+                        <span>{result}</span>
+                    </form>
                     </div>
-                    <div className="message">
-                        <textarea  name="message" placeholder="Message" required></textarea>
-                    </div>
-                    <button type="submit"><span class="material-symbols-outlined">send</span> Envoyer</button>
-                    <span>{result}</span>
-                </form>
-            </div>
+                </div>
+            {/* </div> */}
         </>
     )
     

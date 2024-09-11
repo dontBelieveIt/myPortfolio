@@ -1,46 +1,55 @@
 @import "../../Page/Page.scss";
 
-.section > img {
-    width: 30%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-}
-
 #aboutMe {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center;
+    #cards-container {
+        @include flex-row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.8rem;    
+        width: 100%;
 
-    & img {
-        @media screen and (max-width:600px) {
-            display: none;
+        h3 {
+            font-size: 0.8rem; 
+        }
+
+        p {
+            text-transform: none;
+            font-size: 0.6rem;
+        }
+
+        .cards {
+            background-color: transparent;
+        }
+
+        @media screen and (max-width:1000px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            justify-items: center;
+        }
+
+        @media screen and (max-width:680px) {
+            @include justify-items;
+            @include flex-column;
         }
     }
 
-    @media screen and (max-width:600px) {
-        @include flex-column;
+    h3 {
+        line-height: 2.5;
+        margin-top: 2rem;
     }
 
-    // @media only screen and (max-width: 1200) and (min-width: 600px) {
-    //     grid-template-columns: 1fr 1fr;
-    // }
+    a, .card {
+        height: 8rem; 
+        width: 10rem;
+
+        @media screen and (max-width:680px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width:1000px) {
+            width: 16rem;
+            height: 10rem;
+        }
+    }
 }
-
-.about-me {
-    display:flex; 
-    flex-direction: column;
-}; 
-
-.passion-block {
-    // justify-content: space-evenly;
-    // align-items: center;
-    // margin-bottom : 2rem;
-    // gap: 1rem; 
-
-    // & > img {
-        height: 2rem; 
-        margin-right: .5rem;
-        margin-left: .5rem;
-    // }
-};

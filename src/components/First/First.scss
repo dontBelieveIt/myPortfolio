@@ -1,77 +1,99 @@
 @import "../../Page/Page.scss";
 
 .first-mobile {
-    @media screen and (min-width:600px) {
+    margin-top: 3rem;
+    @media screen and (min-width:1000px) {
         display: none;
     }
 }
 .first-desktop {
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:1000px) {
         display: none;
     }
 }
+.first__btn {
+    @include flex-row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 60%; 
 
-.first { 
-    display: flex; 
-    flex-direction: row;
-    gap: 2rem;
+    // @media screen and (max-width:680px) {
+    //     width: 100%;
 
-    & h2, h3 {
-        color: $white;
-    }
-
-    &__container {
+    //     a, button {
+    //         width: 100%;
+    //     }
+    // }
+    
+    @media only screen and (max-width: 680px){
         @include flex-column;
+        @include justify-items; 
+
+        a, button {
+            width: 100%;
+        }
     }
 
-    &__btn-container {
+    
+    @media screen and (max-width:1000px) {
+        width: 100%;
+        justify-content: space-between;
+
+        a, button {
+            width: 12rem;
+        }
+    }
+}
+
+#first-section {
+    .section__container {
         @include flex-column; 
-        @include justify-items;
-        gap: 0.8rem;
+        justify-content: flex-start;
+        align-items: baseline;
+        width: 100%;
+    }
 
-        &__items {
-            @include flex-row; 
-            justify-content: left;
-            width: 100%; 
-            flex-wrap: wrap;
-            gap: 2rem;
+    #downloadCV {
+        width: 100%;
 
-            @media screen and (max-width:600px) {
-                justify-content: space-between;
+        &:hover {
+            @media screen and (max-width:680px) {
+                background-color: $dark;
+                border: 1px solid $third;
             }
         }
 
-        @media screen and (max-width:600px) {
-            @include flex-column;
+        & a {
+            color: $white; 
+            text-transform: unset;
+            @include flex-row; 
+            @include justify-items;
+            align-self: center;
+            gap: 0.2rem;
+
+            &:hover {
+                color: $second;
+
+                @media screen and (max-width:680px) {
+                    color: $main;
+                }
+            }
+        }
+
+        @media screen and (max-width:680px) {
+            margin: 2rem 0;
+            width: 100%;
+            background-color: $third;
+            border: 1px solid $white; 
+            a {
+                color: $dark;
+            }
         }
     }
-
-    @media screen and (max-width:600px) {
-        @include flex-column;
-    }
-
-    // @media only screen and (max-width: 1200) and (min-width: 600px) {
-    //     grid-template-columns: 1fr 1fr;
-    // }
 }
 
-#downloadCV {
-    width: 100%;
-
-    & a {
-        color: $white; 
-        text-transform: unset;
-        @include flex-row; 
-        @include justify-items;
-        align-self: center;
-        gap: 0.2rem;
-
-        &:hover {
-            color: $second;
-        }
-    }
-
-    @media screen and (max-width:600px) {
-        margin: 2rem 0;
-    }
+#btn-container {
+    align-items: baseline;
+    display: flex;
 }

@@ -2,12 +2,12 @@
     {
         "id": "aa1" ,
         "langue" : "FR" ,
-        "text": "<p>Après avoir enchaîné quelques métiers dans le service client, et mes 25 ans passés, je me posais la question quant à mon avenir professionnel. Me rappelant que, lorsque j'étais petite, je voulais me tourner vers les métiers du numériques. J'ai voulu me redonné une chance et me <u>réorienter<\/u> vers cette branche et... BINGO ! J'ai développé un goût pour le codage et le développement d'application web. <\/p><p>C'est au cours de ma <u>formation en Développement Web à OpenclassRooms<\/u> que j'ai trouvé ma voie, et je compte poursuivre mon apprentissage en <u>alternance<\/u>, en me spécialisant dans <u>React<\/u> et <u>NodeJS<\/u>, plus spécifiquement.<\/p>"
+        "FR": "Après avoir enchaîné quelques métiers dans le service client, et mes 25 ans passés, je me posais la question quant à mon avenir professionnel. Me rappelant que, lorsque j'étais petite, je voulais me tourner vers les métiers du numériques, j'ai voulu me redonner une chance et me réorienter vers cette branche et... BINGO ! J'ai développé un goût pour le codage et le développement d'application web. C'est au cours de ma formation en Développement Web à OpenclassRooms, en l'occurence, que j'ai trouvé ma voie ; et je compte poursuivre mon apprentissage en alternance, en me spécialisant dans React et NodeJS, plus spécifiquement."
     },
 
     {
         "id": "aa2",
         "langue" : "GB" ,
-        "text": "After going job to job in client service, and once my 25 years passed, I've wondered about my carrier future. Remembering that, when I was little, I wanted to work with computers, I wanted to give myself a chance and proceeded to reoriente myself into this domain and... BINGO ! I've developped, throughout my formation, a taste for code and the developpement of web application. I have then found my calling and will continue my way into this field, with an internship. I want to learn especially closely React and NodeJS."
+        "GB": "After going job to job in client service, and once my 25 years passed, I've wondered about my carrier future. Remembering that, when I was little, I wanted to work with computers, I wanted to give myself a chance and proceeded to reoriente myself into this domain and... BINGO ! I've developped, throughout my formation, a taste for code and the developpement of web application. I have then found my calling and will continue my way into this field, with an internship. I want to learn especially closely React and NodeJS."
     }
 ]

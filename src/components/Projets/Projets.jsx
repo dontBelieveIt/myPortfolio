@@ -12,49 +12,56 @@ import project5 from "../../assets/Projects/MonVieuxGrimoire_Logo.svg";
 export function Projets(params) {
     return(
         <div className="section" id="project-section">
-            <h2>Projets</h2>
 
-            <div className="projet__cards-container">
+            <div className="section__container">
+                <h2>Projets</h2>
 
-                <Cards 
-                    src={project1}
-                    alt={null}
-                    height={"14rem"}
-                    width={"20rem"}
-                />
+                <div className="projet__cards-container">
 
-                <Cards 
-                    src={projet2}
-                    alt={null}
-                    height={"14rem"}
-                    width={"20rem"}
-                />
+                    <Cards 
+                        src={project1}
+                        alt={null}
+                        title={"HTML5/CSS3"}
+                        description={"Front-end of a Booking website"}
+                        link={"https://github.com/dontBelieveIt/OC-P2-BookieWebSite"}
+                    />
 
-                <Cards 
-                    src={project3}
-                    alt={null}
-                    height={"14rem"}
-                    width={"20rem"}
-                />
+                    <Cards 
+                        src={projet2}
+                        alt={null}
+                        title={"JavaScript, API"}
+                        description={"Front-end and API developpement"}
+                        link={"https://github.com/dontBelieveIt/OC-P3-Sophie_Bluel"}
+                    />
+
+                    <Cards 
+                        src={project3}
+                        alt={null}
+                        title={"Nina Carducci"}
+                        description={"Optimization and debug"}
+                        link={"https://github.com/dontBelieveIt/OC-P4-Opt-Debug_Nina-Carducci"}
+                    />
+                    
+                    <Cards 
+                        src={projet4}
+                        alt={null}
+                        title={"React"}
+                        description={"Front-end React developpement of a Booking website"}
+                        link={"https://github.com/dontBelieveIt/OC-P5-Kasa-App-React"}
+                    />
+
+                    <Cards 
+                        src={project5}
+                        alt={null}
+                        title={"Back-end"}
+                        description={"Back-end developpement, no link currently"}
+                        link={null}
+                    />
+                    
+                    <a href="https://github.com/dontBelieveIt/" target="_blank"><button>+ GitHub</button></a>
                 
-                <Cards 
-                    src={projet4}
-                    alt={null}
-                    height={"14rem"}
-                    width={"20rem"}
-                />
-
-                <Cards 
-                    src={project5}
-                    alt={null}
-                    height={"14rem"}
-                    width={"20rem"}
-                />
-                
-                <a href="https://github.com/dontBelieveIt/" target="_blank"><button>+ GitHub</button></a>
-            
-            </div>
-                        
+                </div>
+            </div>           
         </div>
     )
 }

@@ -21,13 +21,38 @@
             background-color: $fourth;
             border: 1px solid $fourth;
         }
+
+        @media screen and (max-width:1000px) {
+            width: 100%;
+        }
     }
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:680px) {
         @include flex-column;
     }
 
-    @media only screen and (max-width: 1200) and (min-width: 600px) {
+    @media only screen and (max-width: 1000px) and (min-width: 680px) {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+#project-section {
+
+    .card {
+        height: 14rem;
+        width: 20rem;   
+    }
+
+    @media screen and (max-width:680px) {
+        a, .card {
+            width: 100%;
+        }
+    }   
+
+    
+    @media screen and (max-width:1000px) {
+        a, .card {
+            width: 18rem;
+        }
     }
 }

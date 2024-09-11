@@ -13,17 +13,31 @@ html {
 }
 
 // Color theme
-$main : #dd6a6e;
+$main : pink;
 $second : #6e5156; 
-$third : #657d83; 
+$third : skyblue; 
 $fourth : #23515c;
 
 $dark : #080c14;
 $white : #f6f2e1;
 
 $section : rgba(8, 12, 20, 0.5);
-$section-dark : rgba(110, 81, 86, 0.5);
+$section-two : rgba(110, 81, 86, 0.4);
+// for phone
+$mobile-section : rgba(8, 12, 20, 0.7); 
+$mobile-section-dark : rgba(110, 81, 86, 0.7); 
+// for tablette
+$tablette-section: rgba(8, 12, 20, 0.3); 
+$tablette-section-dark: rgba(110, 81, 86, 0.2); 
 
+
+// // Once color theme
+// $main : #dd6a6e;
+// $second : #6e5156; 
+// $third : #657d83; 
+// $fourth : #23515c;
+
+//old old old color theme (keep it just in case)
 // $main : #B87333;
 // $second : #824D74; 
 // $third : #BE7B72; 
@@ -34,6 +48,9 @@ $section-dark : rgba(110, 81, 86, 0.5);
 
 //Border radius : 
 $radius : 5px;
+
+//container/menu size
+$container: 10rem;
 
 @mixin flex-row {
   display: flex; 
@@ -48,6 +65,16 @@ $radius : 5px;
 @mixin justify-items {
   justify-content: center;
   align-items: center;
+}
+
+@mixin transition {
+  transition-timing-function: ease-in-out;
+  transition: 0.8s;
+}
+
+@mixin transition-two {
+  transition-timing-function: ease-in-out ;
+  transition: 0.4s;
 }
 
 body {
@@ -89,23 +116,21 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
   text-transform: uppercase;
+  text-shadow: rebeccapurple 0 0 10px;
 }
 
 h1 {
   font-size: 4rem;
-  color: $main;
+  color: $third;
+  line-height: 1;
+  margin: 0 0 2rem 0;
 }
 h2 {
   font-size: 2rem;
-  color: $second; 
 }
+
 h3 {
   font-size: 1.5rem;
   color: $third;
 }
-
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//     monospace;
-// }
 

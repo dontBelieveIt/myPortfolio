@@ -2,38 +2,40 @@ import "./Formations.scss";
 
 import OpenClassrooms from "../../assets/Others/Logo_OpenClassrooms.png"; 
 import { Cards } from "../Cards/Cards";
+import { FormaCards } from "../FormaCards/FormaCards";
 
 export function Formations() {
     return(
         <div className="section" id="formation-section">
-            <h2>mes formations</h2>
-           <div className="formation">
-                <Cards 
-                    src={OpenClassrooms}
-                    alt={null}
-                    height={"7rem"}
-                    width={"10rem"}
-                />
 
-                {/* <img src={OpenClassrooms} /> */}
-                <div className="text-field">
-                    <h3>Openclassrooms</h3>
-                    <h6>Février 2024 - Octobre 2024</h6>
-                    <h4>Formation Développeur Web</h4>
-                </div>
+            <div className="section__container" id="formation-container">
+                
+                <h2>mes formations</h2>
 
-                <Cards 
-                    src={OpenClassrooms}
-                    alt={null}
-                    height={"7rem"}
-                    width={"10rem"}
-                />
+                <div className="section__container-row">
+                        <FormaCards
+                            img={null}
+                            alt={null}
+                            orga={"Lycée Sarda Garriga"}
+                            date={"2016"}
+                            formation={"Baccalauréat Littéraire"}
+                        />
+                        
+                        <FormaCards 
+                            img={OpenClassrooms}
+                            alt={"Openclassrooms"}
+                            orga={"OpenClassrooms"}
+                            date={"06 Février 2024 - 05 Octobre 2024"}
+                            formation={"Développeuse Web"}
+                        />
 
-                {/* <img src={OpenClassrooms} /> */}
-                <div className="text-field">
-                    <h3>Openclassrooms</h3>
-                    <h6>En recherche d'une entreprise</h6>
-                    <h4>Formation Développeur d'application JavaScript React</h4>
+                        <FormaCards 
+                            img={OpenClassrooms}
+                            alt={"OpenClassrooms"}
+                            orga={"OpenClassrooms"}
+                            date={"05 Octobre - En cours"}
+                            formation={"Développeuse Web Application JavaScript React"}
+                        />
                 </div>
             </div> 
         </div>

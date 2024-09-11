@@ -2,22 +2,22 @@
 
 .card {
     @include flex-column;
-    justify-content: center;
-    align-items: center;
+    @include justify-items; 
+
     background-color: $third;
     border-radius: $radius;
-    cursor: pointer;
-    transition: .8s;
-
     position: relative; 
+
+    cursor: pointer;
+    @include transition-two; 
     transform-style: preserve-3d;
 
     &__image {
-        background-color: transparent;
+        background-color: $second;
         height: 100%;
         width: 100%; 
         border-radius: $radius;
-        transition: .8s;
+        transition: .2s;
 
         backface-visibility: hidden;
         position: absolute;
@@ -37,62 +37,52 @@
     }
 
     &__back {
-        transform: rotateY(180deg);
-        z-index: -2;
-        @include flex-column; 
-        @include justify-items; 
-        border-radius : $radius; 
         height: 100%; 
         width: 100%;
+        border-radius : $radius; 
+        transform: rotateY(180deg);
+        z-index: -5;
+        @include flex-column; 
+        @include justify-items;
+        @include transition-two;
+
+        &:hover {
+            opacity: 1  ;
+            @include transition-two;
+        }
 
         & > h3 + p {
             display: block; 
-            opacity: 0;
             color : $white;
         }
     }   
 
-    & .overlay {
-        height: 60%; 
-        width:100%;
-        position: relative;
-        bottom: 0;
-        z-index: 10; 
-        background-color: aqua;
-        margin: 0;
-        padding: 0;
-    }
-
     &:hover {
         height: 105%;
         width: 105%;
-        transition: .8s;
-        border: 1px solid $fourth;
+        transition: .4s;
+        border: 1px solid $third;
         background-color: $fourth;
 
         transform: rotateY(180deg);
         
         img {
             opacity: 0;
+            @include transition-two;
         }   
  
-        .back {
+        & > .back {
             transform: rotateY(0);
-            border: 1px solid yellow;
-        }
-
-        &> h3, p {
             opacity: 1;
+
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 
+    @media screen and (max-width:680px) {
+        flex:1;
+        width: 100%;
+    }
 }
-
-// .formation {
-//     width: 10rem; 
-//     height: 7rem;
-// }
-
-// .project {
-//     width: 
-// }
