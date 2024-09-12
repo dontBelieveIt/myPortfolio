@@ -26,9 +26,10 @@
     //     }
     // }
     
-    @media screen and (max-width: 680px){
+    @media screen and (max-width:680px){
         @include flex-column;
         @include justify-items; 
+        width: 100%;
 
         a, button {
             width: 100%;
@@ -36,7 +37,7 @@
     }
 
     
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1000px) and (min-width:680px) {
         width: 100%;
         justify-content: space-between;
 
