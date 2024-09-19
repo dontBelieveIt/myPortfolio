@@ -22,7 +22,7 @@
             border: 1px solid $fourth;
         }
 
-        @media screen and (max-width:1000px) {
+        @media screen and (max-width:1220px) {
             width: 100%;
         }
     }
@@ -31,7 +31,7 @@
         @include flex-column;
     }
 
-    @media only screen and (max-width: 1000px) and (min-width: 680px) {
+    @media only screen and (max-width: 1220px) and (min-width: 680px) {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -50,7 +50,7 @@
     }   
 
     
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1220px) {
         a, .card {
             width: 18rem;
         }

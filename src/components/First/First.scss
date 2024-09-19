@@ -2,12 +2,12 @@
 
 .first-mobile {
     margin-top: 3rem;
-    @media screen and (min-width:1000px) {
+    @media screen and (min-width:1220px) {
         display: none;
     }
 }
 .first-desktop {
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1220px) {
         display: none;
     }
 }
@@ -37,7 +37,7 @@
     }
 
     
-    @media screen and (max-width:1000px) and (min-width:680px) {
+    @media screen and (max-width:1220px) and (min-width:680px) {
         width: 100%;
         justify-content: space-between;
 

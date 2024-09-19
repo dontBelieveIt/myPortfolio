@@ -119,12 +119,12 @@ form {
         }
     }
 
-    @media screen and (max-width:1000px) and (min-width:680px) {
+    @media screen and (max-width:1220px) and (min-width:680px) {
         @include justify-items;
     }
 
     
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1220px) {
         @include flex-column;
     }
 }
@@ -133,11 +133,11 @@ form {
     @include flex-row; 
     gap: 0.8rem;
 
-    @media screen and (max-width:1000px) and (min-width:680px) {
+    @media screen and (max-width:1220px) and (min-width:680px) {
         gap: 0;
     }
 
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1220px) {
         @include flex-column;
         gap: 0.5rem;
         width: 100%;
@@ -152,7 +152,7 @@ form {
     align-items: center;
 
     
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1220px) {
         @include flex-column;
     }
 }
@@ -171,7 +171,7 @@ form {
         align-items: center;
         // gap: 0.8rem;
 
-        @media screen and (max-width:1000px) {
+        @media screen and (max-width:1220px) {
             width: 100%;
         }
     }
