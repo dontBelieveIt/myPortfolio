@@ -14,7 +14,7 @@ export function ToggleMenu() {
         <>
             <div className="toggle-btn `${toggle ? 'none' : 'active'}`" onClick={(event) => {event.preventDefault()
                 setToggle(!toggle)}}>
-                    {toggle ? <img src={closeMenu} /> : <img src={openMenu} />}
+                    {toggle ? <img src={closeMenu} alt="Close the menu"/> : <img src={openMenu} alt="Open the menu"/>}
             </div>
             {toggle ? <Timeline /> : null}
         </>

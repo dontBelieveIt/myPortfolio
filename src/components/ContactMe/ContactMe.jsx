@@ -21,8 +21,20 @@ export function ContactMe() {
         navigator.clipboard.writeText(copyText.value);
     
         // Alert the copied text
-        alert("Copied the text: " + copyText.value);
+        alert("Adresse e-mail " + copyText.value + " copiée !");
     }; 
+
+    function copyPhone(e) {
+        e.preventDefault(); 
+        const phoneNumber = "0780941735" ; 
+
+        // phoneNumber.select(); 
+        // phoneNumber.setSelectionRange(0, 999990);
+        navigator.clipboard.writeText(phoneNumber);
+
+        alert("Numéro de téléphone " + phoneNumber + " copié !")
+
+    }
 
     // Function to submit mail on emial address
         const [result, setResult] = useState("");
@@ -55,10 +67,19 @@ export function ContactMe() {
                 <div className="section__container">
                     <h2>Contactez-moi !</h2>
                     <div className="contact-me" id="my-email">
-                        <h3>Mon e-mail </h3>
+                        <h3>Mon e-mail</h3>
                         <div className="phone-container">
                             <input type="text" value="hello.i.am.roxane@gmail.com" id="myEmail"></input>
                             <button onClick={copyEmail}><span class="material-symbols-outlined">content_copy</span>Copier</button> 
+                        </div>
+                    </div>
+
+                    <div className="contact-me" id="my-number">
+                        <h3>Mon numéro</h3>
+                        <div className="phone-container">
+                            <input type="text" value="07 80 94 17 35" id="myNumber"></input>
+                            <button onClick={copyPhone}><span class="material-symbols-outlined">content_copy</span>Copier</button>
+                            <a href="tel:0780941735"><button><span class="material-symbols-outlined">call</span></button></a>
                         </div>
                     </div>
                     

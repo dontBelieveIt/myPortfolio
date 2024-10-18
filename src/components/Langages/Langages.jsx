@@ -31,7 +31,7 @@ export function Langages(params) {
 
                 <div id="languages-technology">
                     <div className="language-item">
-                        <h3>Langues</h3>
+                        <h3>Langues & Framework</h3>
                         <div className="cards-container">
                             <Cards 
                             src={html_logo}
@@ -92,7 +92,7 @@ export function Langages(params) {
                     </div>
 
                     <div className="language-item">
-                        <h3>Technologies et Outils</h3>
+                        <h3>Technologies & Outils</h3>
                         <div className="cards-container">
                             <Cards 
                             src={git_logo}

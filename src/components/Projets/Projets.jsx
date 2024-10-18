@@ -58,7 +58,7 @@ export function Projets(params) {
                         link={"https://github.com/dontBelieveIt/OC-P6-Mon-Vieux-Grimoire"}
                     />
                     
-                    <a href="https://github.com/dontBelieveIt/" target="_blank"><button>+ GitHub</button></a>
+                    <a href="https://github.com/dontBelieveIt/" target="_blank" rel="noreferrer"><button>+ GitHub</button></a>
                 
                 </div>
             </div>           
